@@ -4,10 +4,20 @@ import java.util.Arrays;
 
 public class Array1 {
     public static int arr[] = {1,2,3,4,5,6,7,8};
+    public static int k = 3;
 
     public static void main(String[] args) {
+        int n = arr.length;
+            k = k % n;
         Array1.reverse(arr,0,arr.length-1);
+        Array1.reverse(arr,0,k-1);
+        Array1.reverse(arr,k,arr.length-1);
+
+
+        // final ans
         System.out.println(Arrays.toString(arr));
+
+
     }
 
     public static void reverse(int[] arr,int i,int j){
