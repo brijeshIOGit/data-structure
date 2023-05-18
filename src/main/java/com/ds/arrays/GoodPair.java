@@ -61,7 +61,6 @@ public class GoodPair {
         int result = GoodPair.hasPair(arr);
         System.out.println("result: "+result);
     }
-
     public static int hasPair(int[] arr){
         for(int i = 0;i<arr.length;i++){
             for(int j = i+1;j<arr.length;j++){
