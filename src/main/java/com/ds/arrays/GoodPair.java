@@ -55,7 +55,6 @@ package com.ds.arrays;
 public class GoodPair {
     public static int[] arr = {1,2,3,4,5};
     public static int B = 7;
-
     public static void main(String[] args) {
         int result = GoodPair.hasPair(arr);
         System.out.println("result: "+result);
