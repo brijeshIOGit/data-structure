@@ -3,7 +3,7 @@ package com.ds.arrays;
 import java.util.Arrays;
 
 public class EquilibriumIndex {
-    static int[] arr = {-7, 1, 5, 2, -4, 3, 0};
+    static int[] arr = {1,2,3,7,1,2,3};
     // pf = [-7, -6, -1, 1, -3, 0, 0]
     static int[] pf = new int[arr.length];
     static int ans = Integer.MAX_VALUE;
@@ -22,6 +22,8 @@ public class EquilibriumIndex {
             }
 
             int rightSum = pf[pf.length-1] - pf[i];
+
+            System.out.println("l and r"+leftSum+" R: "+rightSum);
 
             if(leftSum == rightSum){
                 ans = Math.min(ans,i);
